@@ -49,9 +49,7 @@ export const Form: FunctionComponent = () => {
         if (response.ok) {
           const data = await response.json();
           console.log("Superhero added successfully with id:", data._id);
-          // Aquí podrías mostrar un mensaje de éxito o redirigir a otra página
         } else {
-          // Si la respuesta no es exitosa, maneja el error adecuadamente
           console.error("Failed to add superhero:", response.statusText);
           setError("Failed to add superhero: " + response.statusText);
           
